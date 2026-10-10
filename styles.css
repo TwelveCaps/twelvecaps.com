@@ -1,0 +1,105 @@
+/* STYLES FOR TWELVE CAPS. */
+
+
+
+/* ---| SHARED |--- */
+* {
+    margin: 0; }
+
+html, body {
+    height: 100%; }
+
+body {
+    display: flex;
+    flex-direction: column;
+
+    font-size: 20px;
+    font-family: "Playfair Display", serif; }
+
+.header, .header-dropdown-content, .footer {
+    background-color: darkslateblue; }
+
+.header, .footer h3 {
+    font-size: 26px;
+    font-family: "Playfair Display SC", serif; }
+
+/* LINKS. */
+a {
+    color: darkslateblue;
+    text-decoration: none; }
+
+a:hover {
+    text-decoration: underline; }
+
+.header a, .footer a {
+    color: white; }
+
+
+
+/* ---| HEADER |--- */
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 7.5%;
+    padding: 1%;
+
+    border-bottom: 2px solid darkblue; }
+
+/* DROPDOWN EXPLORER MENU. */
+.header-dropdown {
+    position: relative; }
+
+.header-dropdown-btn {
+    font: inherit;
+    color: white;
+
+    background: none;
+    border: none;
+    padding: 12px;
+
+    cursor: pointer; }
+
+.header-dropdown-content {
+    display: none;
+    position: absolute;
+
+    left: 50%;
+    transform: translateX(-50%);
+
+    min-width: 160px;
+
+    box-shadow: 0 8px 16px black; }
+
+.header-dropdown-content a {
+    padding: 12px 24px; }
+
+.header-dropdown:hover .header-dropdown-content {
+    display: flex; }
+
+
+
+/* ---| CONTENT |--- */
+.content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+
+    max-width: 60%;
+    align-self: center; }
+
+
+
+/* ---| FOOTING |--- */
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+
+    padding: 1% 5%;
+
+    color: white;
+    border-top: 2px solid darkblue; }
+
+.footer h3 {
+    margin-bottom: 10px; }
